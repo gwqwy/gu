@@ -4,8 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="博客">
-    <meta name="description" content="博客">
+    <meta name="keywords" content="hexo部署, 博客">
+    <meta name="description" content="此网站为hexo+github pages部署的网站，接下来我将部署这个网站的过程写出来。
+Hexo博客搭建与部署到GitHub全攻略
+随着互联网的快速发展，个人博客成为了越来越多人展示自我、分享知识的平台。Hexo作为一款轻量级、易上手的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,53 +19,12 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>博客</title>
+    <title>hexo部署 | 博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
 
-    <!-- index cover -->
-    <!-- <link rel="stylesheet preload" type="text/css" href="/css/indexcover.css"> -->
-    <style>
-        .carousel-control {
-            width: 45px;
-            height: 45px;
-            line-height: 55px;
-            border-radius: 45px;
-            background: transparent;
-            cursor: pointer;
-            z-index: 100;
-        }
-        
-        #prev-cover {
-            position: absolute;
-            top: 48%;
-            left: 8px;
-        }
-        
-        #next-cover {
-            position: absolute;
-            top: 48%;
-            right: 8px;;
-        }
-        
-        #prev-cover i {
-            margin-right: 3px;
-        }
-        
-        #next-cover i {
-            margin-left: 3px;
-        }
-        
-        .carousel-control:hover {
-            background-color: rgba(0, 0, 0, .4);
-        }
-        
-        .carousel-control i {
-            color: #fff;
-            font-size: 2.4rem;
-        }
-    </style>
+    <!-- bg-cover style     -->
 
 
 
@@ -84,6 +45,8 @@
 
 
 
+
+    
 
 
 
@@ -370,346 +333,484 @@
     
 
 
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
 
-    <div class="carousel-item  white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                博客
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">hexo部署</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-<script>
+
+
+<main class="post-container content">
+
     
-      var bannerUrl = "/medias/featureimages/" + Math.floor(Math.random() * 24) + '.jpg';
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%BD%91%E7%AB%99/">
+                                <span class="chip bg-color">网站</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-05-25
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    7 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>此网站为hexo+github pages部署的网站，接下来我将部署这个网站的过程写出来。</p>
+<p>Hexo博客搭建与部署到GitHub全攻略</p>
+<p>随着互联网的快速发展，个人博客成为了越来越多人展示自我、分享知识的平台。Hexo作为一款轻量级、易上手的静态博客框架，凭借其出色的性能和灵活的定制性，赢得了众多开发者和内容创作者的青睐。本文将详细介绍如何使用Hexo搭建博客，并将其部署到GitHub上，让你的博客轻松上线。</p>
+<p>一、Hexo环境搭建</p>
+<p>安装Node.js</p>
+<p>Hexo是基于Node.js的静态博客框架，因此需要先安装Node.js。你可以从Node.js官网下载对应版本的安装包，按照提示进行安装。</p>
+<p>安装Hexo</p>
+<p>安装完Node.js后，打开命令行工具（Windows下为CMD或PowerShell，Mac&#x2F;Linux下为Terminal），输入以下命令安装Hexo：</p>
+<pre><code>bash
+npm install -g hexo-cli
+</code></pre>
+<p>等待安装完成后，你就可以使用Hexo命令来初始化你的博客了。</p>
+<p>二、Hexo博客初始化</p>
+<p>创建博客目录<br>选择一个合适的目录，用于存放你的博客文件。在命令行中进入该目录，然后输入以下命令初始化博客：</p>
+<pre><code>bash
+hexo init blog
+</code></pre>
+<p>这里假设你的博客目录名为blog，你可以根据自己的需要修改。</p>
+<p>安装依赖<br>进入博客目录，安装Hexo的依赖项：</p>
+<pre><code>bash
+cd blog  
+npm install
+</code></pre>
+<p>安装完成后，你的博客就初始化完成了。</p>
+<p>三、Hexo博客配置</p>
+<p>Hexo提供了丰富的配置项，你可以根据自己的需求进行定制。主要的配置文件是_config.yml，位于博客根目录下。你可以使用文本编辑器打开该文件，修改相应的配置项。以下是一些常用的配置项：</p>
+<pre><code> title：博客标题
+ subtitle：博客副标题
+ description：博客描述
+ author：作者名称
+ language：博客语言
+ url：博客地址（部署到GitHub后需要修改）
+ theme：博客主题（Hexo支持多种主题，你可以根据自己的喜好选择）
+</code></pre>
+<p>四、Hexo博客写作</p>
+<p>Hexo使用Markdown格式进行写作。在博客目录下的source&#x2F;_posts文件夹中，你可以创建新的Markdown文件来撰写博客文章。每个Markdown文件对应一篇博客文章，文件名通常为yyyy-mm-dd-title.md的格式。在Markdown文件中，你可以使用Markdown语法来排版你的文章，同时也可以使用Hexo提供的标签和插件来扩展你的文章功能。</p>
+<p>五、Hexo博客部署到GitHub</p>
+<p>创建GitHub仓库<br>首先，你需要在GitHub上创建一个用于存放博客文件的仓库。仓库名称通常为username.github.io（其中username为你的GitHub用户名），这样可以直接通过<a target="_blank" rel="noopener" href="https://username.github.io/%E8%AE%BF%E9%97%AE%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%E3%80%82">https://username.github.io/访问你的博客。</a></p>
+<p>配置Git</p>
+<p>在博客目录下，初始化Git仓库并配置你的Git信息：</p>
+<pre><code>bash
+git init  
+git config --global user.name &quot;Your Name&quot;  
+git config --global user.email &quot;your-email@example.com&quot;
+</code></pre>
+<p>添加文件到Git</p>
+<p>将博客目录下的所有文件添加到Git仓库中：</p>
+<pre><code>bash
+git add .
+</code></pre>
+<p>提交文件到Git</p>
+<p>提交文件并添加提交信息：</p>
+<pre><code>bash
+git commit -m &quot;Initial commit&quot;
+</code></pre>
+<p>将Git仓库关联到GitHub<br>将本地的Git仓库关联到你在GitHub上创建的仓库：</p>
+<pre><code>bash
+git remote add origin 		  https://github.com/username/username.github.io.git
+</code></pre>
+<p>推送文件到GitHub</p>
+<p>将本地的文件推送到GitHub上的仓库：</p>
+<pre><code>bash
+git push -u origin main
+</code></pre>
+<p>注意：如果你的Git仓库使用的是main分支而不是master分支，你需要将上面的命令中的master替换为main。</p>
+<p>配置Hexo部署</p>
+<p>在Hexo的配置文件_config.yml中，找到deploy部分，添加以下配置：</p>
+<pre><code>yaml
+deploy:  
+  type: git  
+  repo: https://github.com/username/username.github.io.git  
+  branch: main
+</code></pre>
+<p>同样地，如果你的Git仓库使用的是master分支，你需要将branch的值修改为master。</p>
+<p>部署博客<br>在命令行中输入以下命令，Hexo会自动将博客文件生成到public目录下，并将该目录下的文件推送到GitHub上的仓库：</p>
+<pre><code>bash
+hexo deploy
+</code></pre>
+<p>等待部署完成后，过几分钟后你就可以通过<a target="_blank" rel="noopener" href="https://username.github.io/">https://username.github.io</a> 访问你的网站。</p>
+<p>六、配置自定义域名（可选）</p>
+<p>如果你希望使用自己的域名来访问博客，可以在GitHub上进行相关设置。以下是配置自定义域名的步骤：</p>
+<p>购买域名<br>首先，你需要从域名注册商处购买一个你喜欢的域名。域名选择时应尽量简短易记，并与你的博客主题或个人品牌相关联。</p>
+<p>配置DNS<br>购买域名后，你需要将域名的DNS解析到你的GitHub仓库。这通常需要在域名注册商的管理界面中进行设置。你需要将域名的A记录或CNAME记录指向GitHub Pages提供的IP地址或特定的子域名。</p>
+<p>对于使用CNAME的情况，你需要在GitHub仓库的设置中启用“Custom domain”选项，并输入你的域名。然后，在域名注册商处将你的域名设置为CNAME记录，并指向username.github.io（其中username为你的GitHub用户名）。</p>
+<p>等待生效<br>完成DNS配置后，需要等待一段时间（通常是几分钟到几小时）让DNS解析生效。你可以使用在线的DNS查询工具来检查你的域名是否已经成功解析到GitHub Pages的服务器。</p>
+<p>更新Hexo配置<br>在你的Hexo博客的配置文件_config.yml中，将url的值更新为你的自定义域名。这样，Hexo在生成博客文件时会使用正确的URL。</p>
+<p>七、优化与扩展</p>
+<p>选择主题<br>Hexo支持丰富的主题，你可以根据自己的喜好选择适合的主题。在Hexo的官方文档或主题市场中，你可以找到许多精美且功能强大的主题。选择主题后，按照主题的文档进行安装和配置。</p>
+<p>安装插件<br>Hexo的插件生态也非常丰富，你可以通过安装插件来扩展博客的功能。例如，你可以安装用于生成文章目录的插件、用于添加社交分享按钮的插件、用于添加代码高亮功能的插件等。你可以在Hexo的官方文档或插件市场中查找和安装你需要的插件。</p>
+<p>优化SEO<br>为了让你的博客更容易被搜索引擎找到，你可以进行一些SEO优化。例如，确保博客的标题、描述和关键词都是相关且准确的；在文章中合理使用标题标签（H1、H2等）；添加适当的元标签和元描述；优化图片和视频的加载速度等。</p>
+<p>定期备份<br>定期备份你的博客文件是非常重要的。你可以使用Git来进行版本控制，并将你的博客文件推送到GitHub等代码托管平台上进行备份。此外，你还可以定期将博客文件导出为静态文件或ZIP压缩包，并保存在本地或其他安全的存储介质上。</p>
+<p>八、总结</p>
+<p>通过本文的介绍，你应该已经掌握了如何使用Hexo搭建博客并将其部署到GitHub上的方法。Hexo作为一款轻量级、易上手的静态博客框架，可以帮助你快速搭建一个美观且功能强大的个人博客。同时，通过选择合适的主题和安装必要的插件，你还可以进一步扩展和优化你的博客。希望你在搭建和运营博客的过程中能够收获更多的知识和乐趣！</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">古</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://gwqwy.asia/2024/05/25/hexoadminbuadminshu/">https://gwqwy.asia/2024/05/25/hexoadminbuadminshu/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">古</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%BD%91%E7%AB%99/">
+                                    <span class="chip bg-color">网站</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
     
-    $('.bg-cover.about-cover').css('background-image', 'url(' + bannerUrl + ')');
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
 
-</script>
+    
 
+</div>
 
+                </div>
+            </div>
+            
+        </div>
+    </div>
 
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2024/05/25/hexoadminbuadminshu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="hexo部署">
+                        
+                        <span class="card-title">hexo部署</span>
+                    </div>
                 </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            古
+                            
+                        </span>
+                    </div>
+                </div>
 
                 
-                    <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%BD%91%E7%AB%99/">
+                        <span class="chip bg-color">网站</span>
                     </a>
+                    
+                </div>
                 
             </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/gwqwy" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:2339047121@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2339047121" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2339047121" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/05/25/woadmindeadmindiadminyiadminpianadminboadminke/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="我的第一篇博客">
+                        
+                        <span class="card-title">我的第一篇博客</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            古
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
 
 </div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
         </div>
     </div>
-
-    
 </div>
 
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
         });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
         });
         
     });
 </script>
 
-
-
-<main class="content">
-
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
-        </div>
-    </div>
-</div>
-
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2024/05/25/hexoadminbuadminshu/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="hexo部署">
-                            
-                            <span class="card-title">hexo部署</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                此网站为hexo+github pages部署的网站，接下来我将部署这个网站的过程写出来。
-Hexo博客搭建与部署到GitHub全攻略
-随着互联网的快速发展，个人博客成为了越来越多人展示自我、分享知识的平台。Hexo作为一款轻量级、易上手的
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-25
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                古
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E7%BD%91%E7%AB%99/">
-                            <span class="chip bg-color">网站</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2024/05/25/woadmindeadmindiadminyiadminpianadminboadminke/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="我的第一篇博客">
-                            
-                            <span class="card-title">我的第一篇博客</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                我的博客在经过好久的部署后才上线，这都好多天了，还是现在才弄好，还行，可以在网页网页上写。今天为2024&#x2F;5&#x2F;25 10：54。
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-25
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                古
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2024/05/25/helloadminworld/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                            
-                            <span class="card-title">Hello World</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-25
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                古
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-        </div>
-    </article>
 
 </main>
 
