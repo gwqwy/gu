@@ -5,8 +5,8 @@
     
     <entry>
       <title>自述</title>
-      <link href="/2024/06/10/ziadminshu/"/>
-      <url>/2024/06/10/ziadminshu/</url>
+      <link href="/2024/06/10/%E8%87%AA%E8%BF%B0/"/>
+      <url>/2024/06/10/%E8%87%AA%E8%BF%B0/</url>
       
         <content type="html"><![CDATA[<p>  好久都没写博客了，原先搞了好久把这个网站搭建好，然后写了两篇文章后，就没有写过了。想弄个qexo，可是那个网站打不开，就很不好。显示404。<br>  现在就先用着这个pro，不能在线写博客，就让我的创作激情瞬间蒸发，后面看是去搞一个服务器来，还是去搭建后台。不过，买不起服务器，云的和物理的都买不起呀，二手的也有点贵，等后面再看看。</p>]]></content>
       
@@ -18,8 +18,8 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/2024/06/10/helloadminworld/"/>
-      <url>/2024/06/10/helloadminworld/</url>
+      <link href="/2024/06/10/hello-world/"/>
+      <url>/2024/06/10/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
@@ -31,8 +31,8 @@
     
     <entry>
       <title>hexo部署</title>
-      <link href="/2024/05/25/hexoadminbuadminshu/"/>
-      <url>/2024/05/25/hexoadminbuadminshu/</url>
+      <link href="/2024/05/25/hexo%E9%83%A8%E7%BD%B2/"/>
+      <url>/2024/05/25/hexo%E9%83%A8%E7%BD%B2/</url>
       
         <content type="html"><![CDATA[<p>此网站为hexo+github pages部署的网站，接下来我将部署这个网站的过程写出来。</p><p>Hexo博客搭建与部署到GitHub全攻略</p><p>随着互联网的快速发展，个人博客成为了越来越多人展示自我、分享知识的平台。Hexo作为一款轻量级、易上手的静态博客框架，凭借其出色的性能和灵活的定制性，赢得了众多开发者和内容创作者的青睐。本文将详细介绍如何使用Hexo搭建博客，并将其部署到GitHub上，让你的博客轻松上线。</p><p>一、Hexo环境搭建</p><p>安装Node.js</p><p>Hexo是基于Node.js的静态博客框架，因此需要先安装Node.js。你可以从Node.js官网下载对应版本的安装包，按照提示进行安装。</p><p>安装Hexo</p><p>安装完Node.js后，打开命令行工具（Windows下为CMD或PowerShell，Mac&#x2F;Linux下为Terminal），输入以下命令安装Hexo：</p><pre><code>bashnpm install -g hexo-cli</code></pre><p>等待安装完成后，你就可以使用Hexo命令来初始化你的博客了。</p><p>二、Hexo博客初始化</p><p>创建博客目录<br>选择一个合适的目录，用于存放你的博客文件。在命令行中进入该目录，然后输入以下命令初始化博客：</p><pre><code>bashhexo init blog</code></pre><p>这里假设你的博客目录名为blog，你可以根据自己的需要修改。</p><p>安装依赖<br>进入博客目录，安装Hexo的依赖项：</p><pre><code>bashcd blog  npm install</code></pre><p>安装完成后，你的博客就初始化完成了。</p><p>三、Hexo博客配置</p><p>Hexo提供了丰富的配置项，你可以根据自己的需求进行定制。主要的配置文件是_config.yml，位于博客根目录下。你可以使用文本编辑器打开该文件，修改相应的配置项。以下是一些常用的配置项：</p><pre><code> title：博客标题 subtitle：博客副标题 description：博客描述 author：作者名称 language：博客语言 url：博客地址（部署到GitHub后需要修改） theme：博客主题（Hexo支持多种主题，你可以根据自己的喜好选择）</code></pre><p>四、Hexo博客写作</p><p>Hexo使用Markdown格式进行写作。在博客目录下的source&#x2F;_posts文件夹中，你可以创建新的Markdown文件来撰写博客文章。每个Markdown文件对应一篇博客文章，文件名通常为yyyy-mm-dd-title.md的格式。在Markdown文件中，你可以使用Markdown语法来排版你的文章，同时也可以使用Hexo提供的标签和插件来扩展你的文章功能。</p><p>五、Hexo博客部署到GitHub</p><p>创建GitHub仓库<br>首先，你需要在GitHub上创建一个用于存放博客文件的仓库。仓库名称通常为username.github.io（其中username为你的GitHub用户名），这样可以直接通过<a href="https://username.github.io/%E8%AE%BF%E9%97%AE%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%E3%80%82">https://username.github.io/访问你的博客。</a></p><p>配置Git</p><p>在博客目录下，初始化Git仓库并配置你的Git信息：</p><pre><code>bashgit init  git config --global user.name &quot;Your Name&quot;  git config --global user.email &quot;your-email@example.com&quot;</code></pre><p>添加文件到Git</p><p>将博客目录下的所有文件添加到Git仓库中：</p><pre><code>bashgit add .</code></pre><p>提交文件到Git</p><p>提交文件并添加提交信息：</p><pre><code>bashgit commit -m &quot;Initial commit&quot;</code></pre><p>将Git仓库关联到GitHub<br>将本地的Git仓库关联到你在GitHub上创建的仓库：</p><pre><code>bashgit remote add origin   https://github.com/username/username.github.io.git</code></pre><p>推送文件到GitHub</p><p>将本地的文件推送到GitHub上的仓库：</p><pre><code>bashgit push -u origin main</code></pre><p>注意：如果你的Git仓库使用的是main分支而不是master分支，你需要将上面的命令中的master替换为main。</p><p>配置Hexo部署</p><p>在Hexo的配置文件_config.yml中，找到deploy部分，添加以下配置：</p><pre><code>yamldeploy:    type: git    repo: https://github.com/username/username.github.io.git    branch: main</code></pre><p>同样地，如果你的Git仓库使用的是master分支，你需要将branch的值修改为master。</p><p>部署博客<br>在命令行中输入以下命令，Hexo会自动将博客文件生成到public目录下，并将该目录下的文件推送到GitHub上的仓库：</p><pre><code>bashhexo deploy</code></pre><p>等待部署完成后，过几分钟后你就可以通过<a href="https://username.github.io/">https://username.github.io</a> 访问你的网站。</p><p>六、配置自定义域名（可选）</p><p>如果你希望使用自己的域名来访问博客，可以在GitHub上进行相关设置。以下是配置自定义域名的步骤：</p><p>购买域名<br>首先，你需要从域名注册商处购买一个你喜欢的域名。域名选择时应尽量简短易记，并与你的博客主题或个人品牌相关联。</p><p>配置DNS<br>购买域名后，你需要将域名的DNS解析到你的GitHub仓库。这通常需要在域名注册商的管理界面中进行设置。你需要将域名的A记录或CNAME记录指向GitHub Pages提供的IP地址或特定的子域名。</p><p>对于使用CNAME的情况，你需要在GitHub仓库的设置中启用“Custom domain”选项，并输入你的域名。然后，在域名注册商处将你的域名设置为CNAME记录，并指向username.github.io（其中username为你的GitHub用户名）。</p><p>等待生效<br>完成DNS配置后，需要等待一段时间（通常是几分钟到几小时）让DNS解析生效。你可以使用在线的DNS查询工具来检查你的域名是否已经成功解析到GitHub Pages的服务器。</p><p>更新Hexo配置<br>在你的Hexo博客的配置文件_config.yml中，将url的值更新为你的自定义域名。这样，Hexo在生成博客文件时会使用正确的URL。</p><p>七、优化与扩展</p><p>选择主题<br>Hexo支持丰富的主题，你可以根据自己的喜好选择适合的主题。在Hexo的官方文档或主题市场中，你可以找到许多精美且功能强大的主题。选择主题后，按照主题的文档进行安装和配置。</p><p>安装插件<br>Hexo的插件生态也非常丰富，你可以通过安装插件来扩展博客的功能。例如，你可以安装用于生成文章目录的插件、用于添加社交分享按钮的插件、用于添加代码高亮功能的插件等。你可以在Hexo的官方文档或插件市场中查找和安装你需要的插件。</p><p>优化SEO<br>为了让你的博客更容易被搜索引擎找到，你可以进行一些SEO优化。例如，确保博客的标题、描述和关键词都是相关且准确的；在文章中合理使用标题标签（H1、H2等）；添加适当的元标签和元描述；优化图片和视频的加载速度等。</p><p>定期备份<br>定期备份你的博客文件是非常重要的。你可以使用Git来进行版本控制，并将你的博客文件推送到GitHub等代码托管平台上进行备份。此外，你还可以定期将博客文件导出为静态文件或ZIP压缩包，并保存在本地或其他安全的存储介质上。</p><p>八、总结</p><p>通过本文的介绍，你应该已经掌握了如何使用Hexo搭建博客并将其部署到GitHub上的方法。Hexo作为一款轻量级、易上手的静态博客框架，可以帮助你快速搭建一个美观且功能强大的个人博客。同时，通过选择合适的主题和安装必要的插件，你还可以进一步扩展和优化你的博客。希望你在搭建和运营博客的过程中能够收获更多的知识和乐趣！</p>]]></content>
       
@@ -50,8 +50,8 @@
     
     <entry>
       <title>我的第一篇博客</title>
-      <link href="/2024/05/25/woadmindeadmindiadminyiadminpianadminboadminke/"/>
-      <url>/2024/05/25/woadmindeadmindiadminyiadminpianadminboadminke/</url>
+      <link href="/2024/05/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2024/05/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
       
         <content type="html"><![CDATA[<p>我的博客在经过好久的部署后才上线，这都好多天了，还是现在才弄好，还行，可以在网页网页上写。<br>今天为2024&#x2F;5&#x2F;25 10：54。</p>]]></content>
       
