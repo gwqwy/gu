@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo部署, 博客">
-    <meta name="description" content="此网站为hexo+github pages部署的网站，接下来我将部署这个网站的过程写出来。
-Hexo博客搭建与部署到GitHub全攻略
-随着互联网的快速发展，个人博客成为了越来越多人展示自我、分享知识的平台。Hexo作为一款轻量级、易上手的">
+    <meta name="keywords" content="服务器即将上线, 博客">
+    <meta name="description" content="我的服务器到了，配件就要完全到了，等我到时配置好后就要将这个挂载在GitHub上的博客放到服务器上了。服务器为华为rh2288v3，cpu使用的是E5-2660v3，内存为32G，储存为500G*2。但是现在无法使用IBMC，登录不上去，显">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +17,7 @@ Hexo博客搭建与部署到GitHub全攻略
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo部署 | 博客</title>
+    <title>服务器即将上线 | 博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -334,12 +332,12 @@ Hexo博客搭建与部署到GitHub全攻略
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo部署</h1>
+                    <h1 class="description center-align post-title">服务器即将上线</h1>
                 </div>
             </div>
         </div>
@@ -367,6 +365,10 @@ Hexo博客搭建与部署到GitHub全攻略
                                 <span class="chip bg-color">网站</span>
                             </a>
                         
+                            <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+                                <span class="chip bg-color">服务器</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -379,7 +381,7 @@ Hexo博客搭建与部署到GitHub全攻略
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-05-25
+                    2024-06-17
                 </div>
                 
 
@@ -388,14 +390,14 @@ Hexo博客搭建与部署到GitHub全攻略
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2k
+                    154
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    1 分
                 </div>
                 
 
@@ -415,99 +417,7 @@ Hexo博客搭建与部署到GitHub全攻略
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>此网站为hexo+github pages部署的网站，接下来我将部署这个网站的过程写出来。</p>
-<p>Hexo博客搭建与部署到GitHub全攻略</p>
-<p>随着互联网的快速发展，个人博客成为了越来越多人展示自我、分享知识的平台。Hexo作为一款轻量级、易上手的静态博客框架，凭借其出色的性能和灵活的定制性，赢得了众多开发者和内容创作者的青睐。本文将详细介绍如何使用Hexo搭建博客，并将其部署到GitHub上，让你的博客轻松上线。</p>
-<p>一、Hexo环境搭建</p>
-<p>安装Node.js</p>
-<p>Hexo是基于Node.js的静态博客框架，因此需要先安装Node.js。你可以从Node.js官网下载对应版本的安装包，按照提示进行安装。</p>
-<p>安装Hexo</p>
-<p>安装完Node.js后，打开命令行工具（Windows下为CMD或PowerShell，Mac&#x2F;Linux下为Terminal），输入以下命令安装Hexo：</p>
-<pre><code>bash
-npm install -g hexo-cli
-</code></pre>
-<p>等待安装完成后，你就可以使用Hexo命令来初始化你的博客了。</p>
-<p>二、Hexo博客初始化</p>
-<p>创建博客目录<br>选择一个合适的目录，用于存放你的博客文件。在命令行中进入该目录，然后输入以下命令初始化博客：</p>
-<pre><code>bash
-hexo init blog
-</code></pre>
-<p>这里假设你的博客目录名为blog，你可以根据自己的需要修改。</p>
-<p>安装依赖<br>进入博客目录，安装Hexo的依赖项：</p>
-<pre><code>bash
-cd blog  
-npm install
-</code></pre>
-<p>安装完成后，你的博客就初始化完成了。</p>
-<p>三、Hexo博客配置</p>
-<p>Hexo提供了丰富的配置项，你可以根据自己的需求进行定制。主要的配置文件是_config.yml，位于博客根目录下。你可以使用文本编辑器打开该文件，修改相应的配置项。以下是一些常用的配置项：</p>
-<pre><code> title：博客标题
- subtitle：博客副标题
- description：博客描述
- author：作者名称
- language：博客语言
- url：博客地址（部署到GitHub后需要修改）
- theme：博客主题（Hexo支持多种主题，你可以根据自己的喜好选择）
-</code></pre>
-<p>四、Hexo博客写作</p>
-<p>Hexo使用Markdown格式进行写作。在博客目录下的source&#x2F;_posts文件夹中，你可以创建新的Markdown文件来撰写博客文章。每个Markdown文件对应一篇博客文章，文件名通常为yyyy-mm-dd-title.md的格式。在Markdown文件中，你可以使用Markdown语法来排版你的文章，同时也可以使用Hexo提供的标签和插件来扩展你的文章功能。</p>
-<p>五、Hexo博客部署到GitHub</p>
-<p>创建GitHub仓库<br>首先，你需要在GitHub上创建一个用于存放博客文件的仓库。仓库名称通常为username.github.io（其中username为你的GitHub用户名），这样可以直接通过<a target="_blank" rel="noopener" href="https://username.github.io/%E8%AE%BF%E9%97%AE%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%E3%80%82">https://username.github.io/访问你的博客。</a></p>
-<p>配置Git</p>
-<p>在博客目录下，初始化Git仓库并配置你的Git信息：</p>
-<pre><code>bash
-git init  
-git config --global user.name &quot;Your Name&quot;  
-git config --global user.email &quot;your-email@example.com&quot;
-</code></pre>
-<p>添加文件到Git</p>
-<p>将博客目录下的所有文件添加到Git仓库中：</p>
-<pre><code>bash
-git add .
-</code></pre>
-<p>提交文件到Git</p>
-<p>提交文件并添加提交信息：</p>
-<pre><code>bash
-git commit -m &quot;Initial commit&quot;
-</code></pre>
-<p>将Git仓库关联到GitHub<br>将本地的Git仓库关联到你在GitHub上创建的仓库：</p>
-<pre><code>bash
-git remote add origin 		  https://github.com/username/username.github.io.git
-</code></pre>
-<p>推送文件到GitHub</p>
-<p>将本地的文件推送到GitHub上的仓库：</p>
-<pre><code>bash
-git push -u origin main
-</code></pre>
-<p>注意：如果你的Git仓库使用的是main分支而不是master分支，你需要将上面的命令中的master替换为main。</p>
-<p>配置Hexo部署</p>
-<p>在Hexo的配置文件_config.yml中，找到deploy部分，添加以下配置：</p>
-<pre><code>yaml
-deploy:  
-  type: git  
-  repo: https://github.com/username/username.github.io.git  
-  branch: main
-</code></pre>
-<p>同样地，如果你的Git仓库使用的是master分支，你需要将branch的值修改为master。</p>
-<p>部署博客<br>在命令行中输入以下命令，Hexo会自动将博客文件生成到public目录下，并将该目录下的文件推送到GitHub上的仓库：</p>
-<pre><code>bash
-hexo deploy
-</code></pre>
-<p>等待部署完成后，过几分钟后你就可以通过<a target="_blank" rel="noopener" href="https://username.github.io/">https://username.github.io</a> 访问你的网站。</p>
-<p>六、配置自定义域名（可选）</p>
-<p>如果你希望使用自己的域名来访问博客，可以在GitHub上进行相关设置。以下是配置自定义域名的步骤：</p>
-<p>购买域名<br>首先，你需要从域名注册商处购买一个你喜欢的域名。域名选择时应尽量简短易记，并与你的博客主题或个人品牌相关联。</p>
-<p>配置DNS<br>购买域名后，你需要将域名的DNS解析到你的GitHub仓库。这通常需要在域名注册商的管理界面中进行设置。你需要将域名的A记录或CNAME记录指向GitHub Pages提供的IP地址或特定的子域名。</p>
-<p>对于使用CNAME的情况，你需要在GitHub仓库的设置中启用“Custom domain”选项，并输入你的域名。然后，在域名注册商处将你的域名设置为CNAME记录，并指向username.github.io（其中username为你的GitHub用户名）。</p>
-<p>等待生效<br>完成DNS配置后，需要等待一段时间（通常是几分钟到几小时）让DNS解析生效。你可以使用在线的DNS查询工具来检查你的域名是否已经成功解析到GitHub Pages的服务器。</p>
-<p>更新Hexo配置<br>在你的Hexo博客的配置文件_config.yml中，将url的值更新为你的自定义域名。这样，Hexo在生成博客文件时会使用正确的URL。</p>
-<p>七、优化与扩展</p>
-<p>选择主题<br>Hexo支持丰富的主题，你可以根据自己的喜好选择适合的主题。在Hexo的官方文档或主题市场中，你可以找到许多精美且功能强大的主题。选择主题后，按照主题的文档进行安装和配置。</p>
-<p>安装插件<br>Hexo的插件生态也非常丰富，你可以通过安装插件来扩展博客的功能。例如，你可以安装用于生成文章目录的插件、用于添加社交分享按钮的插件、用于添加代码高亮功能的插件等。你可以在Hexo的官方文档或插件市场中查找和安装你需要的插件。</p>
-<p>优化SEO<br>为了让你的博客更容易被搜索引擎找到，你可以进行一些SEO优化。例如，确保博客的标题、描述和关键词都是相关且准确的；在文章中合理使用标题标签（H1、H2等）；添加适当的元标签和元描述；优化图片和视频的加载速度等。</p>
-<p>定期备份<br>定期备份你的博客文件是非常重要的。你可以使用Git来进行版本控制，并将你的博客文件推送到GitHub等代码托管平台上进行备份。此外，你还可以定期将博客文件导出为静态文件或ZIP压缩包，并保存在本地或其他安全的存储介质上。</p>
-<p>八、总结</p>
-<p>通过本文的介绍，你应该已经掌握了如何使用Hexo搭建博客并将其部署到GitHub上的方法。Hexo作为一款轻量级、易上手的静态博客框架，可以帮助你快速搭建一个美观且功能强大的个人博客。同时，通过选择合适的主题和安装必要的插件，你还可以进一步扩展和优化你的博客。希望你在搭建和运营博客的过程中能够收获更多的知识和乐趣！</p>
+                <p>我的服务器到了，配件就要完全到了，等我到时配置好后就要将这个挂载在GitHub上的博客放到服务器上了。<br>服务器为华为rh2288v3，cpu使用的是E5-2660v3，内存为32G，储存为500G*2。但是现在无法使用IBMC，登录不上去，显示拒绝访问，等后面HDMI线到了后连接到电脑试试。<br>不过这个声音有点吵，风扇满转速，不是有点吵，而是很吵，哎。<br>后面再看看，有机会将这个服务器的情况展开说说。要期末考试了，没时间。</p>
 
                 
             </div>
@@ -534,7 +444,7 @@ hexo deploy
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://gwqwy.asia/2024/05/25/hexo%E9%83%A8%E7%BD%B2/">https://gwqwy.asia/2024/05/25/hexo%E9%83%A8%E7%BD%B2/</a>
+                    <a href="https://gwqwy.asia/2024/06/17/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8D%B3%E5%B0%86%E4%B8%8A%E7%BA%BF/">https://gwqwy.asia/2024/06/17/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8D%B3%E5%B0%86%E4%B8%8A%E7%BA%BF/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -574,6 +484,10 @@ hexo deploy
                             
                                 <a href="/tags/%E7%BD%91%E7%AB%99/">
                                     <span class="chip bg-color">网站</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+                                    <span class="chip bg-color">服务器</span>
                                 </a>
                             
                         </div>
@@ -619,17 +533,18 @@ hexo deploy
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/06/10/hello-world/">
+                <a href="/2024/06/17/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8D%B3%E5%B0%86%E4%B8%8A%E7%BA%BF/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="服务器即将上线">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">服务器即将上线</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -639,9 +554,9 @@ hexo deploy
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-06-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -649,6 +564,19 @@ hexo deploy
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%BD%91%E7%AB%99/">
+                        <span class="chip bg-color">网站</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+                        <span class="chip bg-color">服务器</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -660,13 +588,13 @@ hexo deploy
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/05/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+                <a href="/2024/06/10/%E8%87%AA%E8%BF%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="我的第一篇博客">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="自述">
                         
-                        <span class="card-title">我的第一篇博客</span>
+                        <span class="card-title">自述</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -677,7 +605,7 @@ hexo deploy
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-10
                             </span>
                         <span class="publish-author">
                             
